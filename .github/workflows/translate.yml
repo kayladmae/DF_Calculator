@@ -12,8 +12,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: python ./.github/workflows/translate.py
-    - name: switching from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.ssh }}
     - name: check for changes
       run: git status
     - name: stage changed files

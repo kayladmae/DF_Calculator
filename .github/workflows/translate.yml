@@ -12,6 +12,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: python ./.github/workflows/translate.py
+    - name: Set origin
+      run: git remote set-url origin https://github.com/kayladmae/DF_Calculator.git
     - name: check for changes
       run: git status
     - name: stage changed files
